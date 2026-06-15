@@ -16,9 +16,12 @@
 
     <header role="banner">
         <div class="header-inner">
-            <p class="eyebrow">Personal Portfolio</p>
-            <h1>Aditi Gupta</h1>
-            <p class="subtitle">Web development and AI/ML enthusiast</p>
+            <div>
+                <p class="eyebrow">Personal Portfolio</p>
+                <h1>Aditi Gupta</h1>
+                <p class="subtitle">Web development and AI/ML enthusiast</p>
+            </div>
+            <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
         </div>
 
         <nav aria-label="Primary navigation">
@@ -34,7 +37,7 @@
     </header>
 
     <main id="main-content">
-        <section id="about" aria-labelledby="about-heading">
+        <section id="about" class="about" aria-labelledby="about-heading">
             <header>
                 <h2 id="about-heading">About Me</h2>
             </header>
@@ -42,7 +45,7 @@
             <p>I enjoy web development and I am passionate about learning, building projects, and exploring opportunities in modern front-end and AI technologies. My long-term goal is to become an engineer who solves real-world problems with meaningful software solutions.</p>
         </section>
 
-        <section id="skills" aria-labelledby="skills-heading">
+        <section id="skills" class="skills" aria-labelledby="skills-heading">
             <header>
                 <h2 id="skills-heading">Skills</h2>
             </header>
@@ -54,7 +57,7 @@
             </ul>
         </section>
 
-        <section id="highlights" aria-labelledby="highlights-heading">
+        <section id="highlights" class="highlights" aria-labelledby="highlights-heading">
             <header>
                 <h2 id="highlights-heading">Highlights</h2>
             </header>
@@ -77,7 +80,7 @@
             </article>
         </section>
 
-        <section id="contact" aria-labelledby="contact-heading">
+        <section id="contact" class="contact" aria-labelledby="contact-heading">
             <header>
                 <h2 id="contact-heading">Contact</h2>
             </header>
@@ -112,5 +115,6 @@
         <p>Contact me: <a href="mailto:aditigupta0644@gmail.com">aditigupta0644@gmail.com</a> | <a href="tel:+917723971120">+91 77239 71120</a></p>
         <p>Thank you for visiting my portfolio.</p>
     </footer>
+    <script src="script.js" defer></script>
 </body>
 </html>
