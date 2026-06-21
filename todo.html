@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo List App</title>
+  <link rel="stylesheet" href="todo.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">JavaScript Project</p>
+        <h1>Todo List</h1>
+        <p class="subtitle">Create, edit, filter, and persist tasks in the browser.</p>
+      </div>
+      <a class="nav-link" href="index.html">Back to portfolio</a>
+    </header>
+
+    <section class="todo-card" aria-labelledby="todo-title">
+      <div class="todo-top">
+        <h2 id="todo-title">Stay productive</h2>
+        <form id="todo-form" class="todo-form">
+          <label for="todo-input" class="visually-hidden">New task</label>
+          <div class="todo-input-group">
+            <input
+              id="todo-input"
+              name="task"
+              type="text"
+              placeholder="Add a new task"
+              autocomplete="off"
+              aria-label="Add a new task"
+            />
+            <button type="submit">Add</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="todo-actions">
+        <div class="filters" role="group" aria-label="Filter tasks">
+          <button type="button" class="filter-button active" data-filter="all">All</button>
+          <button type="button" class="filter-button" data-filter="active">Active</button>
+          <button type="button" class="filter-button" data-filter="completed">Completed</button>
+        </div>
+        <button id="clear-completed" class="secondary">Clear completed</button>
+      </div>
+
+      <div class="task-list-wrapper">
+        <ul id="task-list" class="task-list" aria-live="polite"></ul>
+      </div>
+
+      <div class="todo-footer">
+        <p id="task-count" class="task-count">0 tasks left</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="todo.js"></script>
+</body>
+</html>
